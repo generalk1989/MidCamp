@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MidCamp</string>
+
+
+    <string name="get_date">Get date</string>
+    <string name="notifications_admin_channel_name">channel_name</string>
+    <string name="notifications_admin_channel_descripti">channel_descripti</string>
+    <string name="msg_subscribed">msg_subscribed</string>
+    <string name="msg_subscribe_failed">msg_subscribe_failed</string>
+
+
+    <string-array name="android_dropdown_arrays"></string-array>
+    <string name="action_list_note">הכנס מטלות</string>
+    <string name="action_list_Equipment">הכנס ציוד</string>
+    <string name="action_excel">פתח אקסל</string>
+    <string name="action_open_group">פתח קבוצה</string>
+
+
+
+
+
+</resources>

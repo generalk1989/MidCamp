@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutTopAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveBtnAdmin"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="שמור"
+            android:textAlignment="center" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayoutTopAdmin">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageProfileAdmin"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:onClick="changePicAdmin"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/tvNameAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageProfileAdmin"
+            android:layout_marginTop="20dp"
+            android:hint="שם"
+            android:onClick="onClickNameUserAdmin"
+            android:textAlignment="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNameAdmin"
+            android:gravity="center_horizontal">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:columnCount="2"
+                android:rowCount="2">
+
+                <EditText
+                    android:id="@+id/statusFieldAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":החלף סטטוס" />
+
+                <EditText
+                    android:id="@+id/themeFieldAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="...מלא את נושא המחנה"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":נושא המחנה" />
+            </GridLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/grey"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvNameEquipment"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:hint="רשימת ציוד"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearchEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_search" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_Equipment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>
+
+
